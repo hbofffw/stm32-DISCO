@@ -38,6 +38,8 @@
  #include "stm324xg_eval_lcd.h"
 #elif defined (USE_STM3210C_EVAL)
  #include "stm3210c_eval_lcd.h"
+#elif defined (USE_STM324x9I_EVAL)
+ #include "stm324x9i_eval_lcd.h"
 #else
  #error "Missing define: Evaluation board (ie. USE_STM322xG_EVAL)"
 #endif

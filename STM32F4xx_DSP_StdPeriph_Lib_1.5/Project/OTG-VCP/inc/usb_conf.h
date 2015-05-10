@@ -47,6 +47,13 @@
  #include "stm3210c_eval_lcd.h"
  #include "stm3210c_eval_ioe.h"
  #include "stm3210c_eval_spi_sd.h"
+#elif defined (USE_STM324x9I_EVAL)
+ #include "stm32f4xx.h"
+ #include "stm324x9i_eval.h"
+ #include "stm324x9i_eval_lcd.h"
+ #include "stm324x9i_eval_ioe16.h"
+ #include "stm324x9i_eval_sdio_sd.h"
+ 
 #else
  #error "Missing define: Evaluation board (ie. USE_STM322xG_EVAL)"
 #endif

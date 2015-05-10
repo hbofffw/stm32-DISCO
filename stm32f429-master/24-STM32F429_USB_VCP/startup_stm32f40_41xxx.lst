@@ -855,14 +855,15 @@ ARM Macro Assembler    Page 14
   432 0000001C                 END
               00000000 
               00000000 
-Command Line: --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\targets\stm
-32f4_discovery\startup_stm32f40_41xxx.d -o.\targets\stm32f4_discovery\startup_s
-tm32f40_41xxx.o -IE:\stm32\stm32f429-master\24-STM32F429_USB_VCP\RTE -Id:\Keil_
-v5\ARM\PACK\Keil\STM32F4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include 
--Id:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="STM
-32F407xx SETA 1" --list=.\startup_stm32f40_41xxx.lst ..\00-STM32F4xx_STANDARD_P
-ERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f
-40_41xxx.s
+Command Line: --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=interwork -
+-depend=.\targets\stm32f4_discovery\startup_stm32f40_41xxx.d -o.\targets\stm32f
+4_discovery\startup_stm32f40_41xxx.o -IE:\stm32\github\stm32-DISCO\stm32f429-ma
+ster\24-STM32F429_USB_VCP\RTE -Id:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.3.0\Dr
+ivers\CMSIS\Device\ST\STM32F4xx\Include -ID:\Keil_v5\ARM\CMSIS\Include --predef
+ine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 514" --predefine="S
+TM32F407xx SETA 1" --list=.\startup_stm32f40_41xxx.lst ..\00-STM32F4xx_STANDARD
+_PERIPHERAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm3
+2f40_41xxx.s
 
 
 
@@ -2292,4 +2293,4 @@ ice\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40_41xxx.s
 ice\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40_41xxx.s
 Comment: __main used once
 2 symbols
-444 symbols in table
+445 symbols in table
