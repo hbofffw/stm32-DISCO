@@ -494,6 +494,9 @@
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
+          <GroupName>::Device</GroupName>
+        </Group>
+        <Group>
           <GroupName>Doc</GroupName>
           <Files>
             <File>
@@ -1711,6 +1714,9 @@
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
+          <GroupName>::Device</GroupName>
+        </Group>
+        <Group>
           <GroupName>Doc</GroupName>
           <Files>
             <File>
@@ -2446,16 +2452,16 @@
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F417IGTx</Device>
+          <Device>STM32F407VGTx</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F4xx_DFP.2.3.0</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IROM(0x08000000,0x100000) IRAM(0x20000000,0x20000) IRAM2(0x10000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F417IGTx$CMSIS\Flash\STM32F4xx_1024.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F407VGTx$CMSIS\Flash\STM32F4xx_1024.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:STM32F417IGTx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</RegisterFile>
+          <RegisterFile>$$Device:STM32F407VGTx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -2465,7 +2471,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F417IGTx$CMSIS\SVD\STM32F41x.svd</SFDFile>
+          <SFDFile>$$Device:STM32F407VGTx$CMSIS\SVD\STM32F40x.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -2926,6 +2932,9 @@
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Device</GroupName>
         </Group>
         <Group>
           <GroupName>Doc</GroupName>
@@ -4143,6 +4152,9 @@
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Device</GroupName>
         </Group>
         <Group>
           <GroupName>Doc</GroupName>
@@ -5405,6 +5417,9 @@
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
+          <GroupName>::Device</GroupName>
+        </Group>
+        <Group>
           <GroupName>Doc</GroupName>
           <Files>
             <File>
@@ -6622,6 +6637,9 @@
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
+          <GroupName>::Device</GroupName>
+        </Group>
+        <Group>
           <GroupName>Doc</GroupName>
           <Files>
             <File>
@@ -7195,19 +7213,34 @@
           <targetInfo name="STM32F446xx"/>
         </targetInfos>
       </component>
+      <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS">
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F401xx"/>
+          <targetInfo name="STM32F40_41xxx"/>
+          <targetInfo name="STM32F411xE"/>
+          <targetInfo name="STM32F427_437xx"/>
+          <targetInfo name="STM32F429_439xx"/>
+          <targetInfo name="STM32F446xx"/>
+        </targetInfos>
+      </component>
     </components>
     <files>
       <file attr="config" category="source" condition="STM32F401xC_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xc.s" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F401VCTx\startup_stm32f401xc.s</instance>
+        <instance index="0">RTE\Device\STM32F401VCTx\startup_stm32f401xc.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F401xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F401VCTx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F401VCTx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F401xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F401xC_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xc.s" version="2.1.0">
         <instance index="0" removed="1">RTE\Device\STM32F401VC\startup_stm32f401xc.s</instance>
@@ -7221,17 +7254,37 @@
         <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
         <targetInfos/>
       </file>
-      <file attr="config" category="source" condition="STM32F411xE_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F411CEUx\startup_stm32f411xe.s</instance>
+      <file attr="config" category="source" condition="STM32F407xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s" version="2.1.0">
+        <instance index="0">RTE\Device\STM32F407VGTx\startup_stm32f407xx.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F40_41xxx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F411CEUx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F407VGTx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F40_41xxx"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" condition="STM32F411xE_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s" version="2.1.0">
+        <instance index="0">RTE\Device\STM32F411CEUx\startup_stm32f411xe.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F411xE"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
+        <instance index="0">RTE\Device\STM32F411CEUx\system_stm32f4xx.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F411xE"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F411xE_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s" version="2.1.0">
         <instance index="0" removed="1">RTE\Device\STM32F411CE\startup_stm32f411xe.s</instance>
@@ -7270,16 +7323,20 @@
         <targetInfos/>
       </file>
       <file attr="config" category="source" condition="STM32F437xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f437xx.s" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F437IITx\startup_stm32f437xx.s</instance>
+        <instance index="0">RTE\Device\STM32F437IITx\startup_stm32f437xx.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F427_437xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F437IITx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F437IITx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F427_437xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F437xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f437xx.s" version="2.1.0">
         <instance index="0" removed="1">RTE\Device\STM32F437II\startup_stm32f437xx.s</instance>
@@ -7294,16 +7351,20 @@
         <targetInfos/>
       </file>
       <file attr="config" category="source" condition="STM32F439xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f439xx.s" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F439NIHx\startup_stm32f439xx.s</instance>
+        <instance index="0">RTE\Device\STM32F439NIHx\startup_stm32f439xx.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F429_439xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F439NIHx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F439NIHx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F429_439xx"/>
+        </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F439xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f439xx.s" version="2.1.0">
         <instance index="0" removed="1">RTE\Device\STM32F439NI\startup_stm32f439xx.s</instance>
@@ -7324,10 +7385,12 @@
         <targetInfos/>
       </file>
       <file attr="config" category="source" name="MDK\Device\Source\ARM\system_stm32f4xx.c" version="2.1.0">
-        <instance index="0" removed="1">RTE\Device\STM32F446ZETx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F446ZETx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.1.0" condition="STM32F4 CMSIS"/>
-        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.1"/>
-        <targetInfos/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.3.0"/>
+        <targetInfos>
+          <targetInfo name="STM32F446xx"/>
+        </targetInfos>
       </file>
     </files>
   </RTE>
