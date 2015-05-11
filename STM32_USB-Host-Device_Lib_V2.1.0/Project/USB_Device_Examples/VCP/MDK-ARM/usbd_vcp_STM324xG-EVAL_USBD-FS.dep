@@ -1339,4 +1339,4 @@ I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x4F6
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x4F6B3AC9)
 I (..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x4F6B3AC9)
 I (..\..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x4F6B3AEB)
-F (..\readme.txt)(0x4F6B3ADB)()
+F (..\readme.txt)(0x00000000)()

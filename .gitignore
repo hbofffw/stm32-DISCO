@@ -54,3 +54,8 @@ Temporary Items
 *.js
 RTE
 STM32F40_41xxx
+TASKING
+TrueSTUDIO
+readme.txt
+EWARM
+RIDE
